@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumberChart</title>
+
+    <meta name="theme-color" content="#009578">
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Android Chrome -->
+    <link rel="icon" href="./src/favicons/Android Chrome/icons8-medium-old-ios-16-192.png" sizes="192x192"
+        type="image/png">
+    <!-- Safari Web -->
+    <link rel="icon" href="./src/favicons/iOS Safari Web Clip/icons8-medium-old-ios-16-180.png" sizes="180x180"
+        type="image/png">
+    <!-- macOS -->
+    <link rel="icon" href="./src/favicons/macOS/icons8-medium-old-ios-16-50.svg" sizes="50x50" type="image/png">
+    <!-- Web -->
+
+    <link rel="icon" href="./src/favicons/Web/icons8-medium-old-ios-16-16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./src/favicons/Web/icons8-medium-old-ios-16-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./src/favicons/Web/icons8-medium-old-ios-16-96.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="./src/favicons/Web/icons8-medium-old-ios-16-120.png" sizes="120x120" type="image/png">
+    <!-- Windows -->
+    <link rel="icon" href="./src/favicons/Windows/icons8-medium-old-ios-16-70.png" sizes="70x70" type="image/png">
+    <link rel="icon" href="./src/favicons/Windows/icons8-medium-old-ios-16-144.png" sizes="144x144" type="image/png">
+    <link rel="icon" href="./src/favicons/Windows/icons8-medium-old-ios-16-310.png" sizes="310x310" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="./src/favicons/128.png" sizes="128x128" type="image/png">
+    <link rel="icon" href="./src/favicons/512.png" sizes="512x512" type="image/png">
+
+    <link rel="stylesheet" href="./src/css/default.css">
+    <link rel="stylesheet" href="./src/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <script type="module" src="./src/js/translate.js"></script>
+    <style>
+        thead th:first-child {
+            width: 20%;
+        }
+
+        thead th:nth-child(2) {
+            width: 30%;
+        }
+
+        thead th:nth-child(3) {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="navbar">
+                <h1 class="navbar-heading">Number<span>Chart</span></h1>
+
+                <div class="dropdown-container">
+                    <button class="fa-solid fa-bars" id="dropdownButton"></button>
+
+                    <ul class="dropdownList hidden">
+                        <li class="dropdownList__item">
+                            <a href="/index.html">Multiplication Table</a>
+                        </li>
+
+                        <li class="dropdownList__item"><a href="/chart.html">Number Chart</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="input-group mb-2">
+                <input type="number" class="form-control" placeholder="Start" aria-label="Start" id="startField">
+                <span class="input-group-text">To</span>
+                <input type="number" class="form-control" placeholder="End" aria-label="End" id="endField">
+            </div>
+
+            <div class="content-area">
+                <button id="previous" class="fa-solid fa-chevron-left nav-btn"></button>
+                <table class="table table-bordered table-hover" id="number-chart">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Hindi</th>
+                            <th>English</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button id="next" class="fa-solid fa-chevron-right nav-btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./src/js/chart.js"></script>
+    <script src="./src/js/common.js"></script>
+
+</body>
+
+</html>
