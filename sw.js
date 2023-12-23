@@ -3,6 +3,7 @@ self.addEventListener("install", e => {
         caches.open("static").then(cache => {
             return cache.addAll([
                 "./",
+                '/manifest.json',
                 "./src/css/default.css",
                 "./src/css/all.min.css",
                 "./src/css/bootstrap.min.css",
