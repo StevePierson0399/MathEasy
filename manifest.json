@@ -23,7 +23,7 @@
     "shortcuts": [
         {
             "name": "Multiplication Table",
-            "short_name": "Feed",
+            "short_name": "Multiplication Table",
             "description": "Multiplication Table",
             "url": "/feed?utm_source=homescreen",
             "icons": [
@@ -43,9 +43,9 @@
         },
         {
             "name": "Number Chart",
-            "short_name": "Feed",
+            "short_name": "Number Chart",
             "description": "Number Chart",
-            "url": "/feed?utm_source=homescreen/chart.html",
+            "url": "/feed?utm_source=homescreen",
             "icons": [
                 {
                     "src": "/src/favicons/128.png",
